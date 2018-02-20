@@ -5,6 +5,16 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'bootstrap-sass'
+gem 'font-awesome-rails'
+gem 'jquery-rails'
+gem 'devise'
+gem 'cancancan'
+gem 'pry-rails'
+gem 'better_errors', group: :development
+gem 'binding_of_caller'
+gem 'carrierwave'
+gem 'kaminari'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
