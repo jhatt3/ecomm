@@ -6,7 +6,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h4 class="modal-title" id="exampleModalLabel"><%= product.name %></h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -21,6 +21,13 @@
                 </div>
                 <div class="modal-footer">
                     <!-- modal footer -->
+                    <p>
+                        <%= form_tag add_to_cart_path do %>
+                            <%= hidden_field_tag :product_id, product.id %>
+                            <%= number_field_tag :quantity, 1, placeholder: "1" %>
+                            <%= submit_tag "Add to Cart", class: "btn btn-primary" %>
+                        <% end %>
+                    </p>
                 </div>
             </div>
         </div>
