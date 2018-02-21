@@ -1,7 +1,7 @@
 <h2>Thanks for shopping with us!</h2>
 <p>Let's review your order:</p>
 
-<% @order.order_items.each do |k,v| %>
+<% @order.order_item.each do |k,v| %>
   <ul>
     <li><%= Product.find(k).name %>, <%= v %></li>
   </ul>
