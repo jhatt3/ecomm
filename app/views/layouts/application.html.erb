@@ -53,14 +53,18 @@
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
 
+
       <div class="pull-right">
-          
+
+            <span class="p1 fa-stack fa-2x has-badge" data-count='<%=  @count %>'>
+              <i class="p3 fa fa-shopping-cart fa-stack-1x xfa-inverse" data-count="<%= @count %>"></i>
+            </span>
+
           <% if user_signed_in? %>
             <%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn btn-success" %>
           <% else %>
 
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "View Cart", view_order_path%></li>
         <li><p class="navbar-text">Already have an account?</p></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
@@ -114,7 +118,7 @@
 <!-- end nav area -->
 
 
-    <div class="container">
+    <div class="container output">
 
       <%= yield %>
     </div>
