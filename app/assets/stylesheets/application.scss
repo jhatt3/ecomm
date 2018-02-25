@@ -69,13 +69,80 @@ body {
     margin-top: 10px;
 }
 
-.container h1 {
+.container {
     color: #f5efef;
 }
 
-.output {
+.edit {
+    color: #1b1a1a;
+    border: none;
+}
+
+.edit strong {
     color: #f5efef;
 }
+
+.edit label{
+    color: #f5efef;
+}
+// .modal {
+//     height: 270;
+//     width: 100;
+// }
+
+.modal-header {
+    background-color: #710000;    
+    color: #f5efef;
+}
+
+
+.close:hover {
+    color: #f5efef;
+}
+
+.modal-body {
+    color: #1b1a1a;
+    position: relative;
+    overflow-y: auto;
+    max-height: 200px;
+    padding-bottom: 25px;
+}
+
+.modal-body h3 {
+    margin: 0px;
+}
+
+.modal-footer {
+    background-color: #710000;
+    color: #f5efef;
+    text-align: right;
+
+}
+
+.modal-footer span {
+    padding-right: 5px;
+}
+
+.well {
+    
+    color: #1b1a1a;
+    height: 370px;
+    font-size: 1.2em;
+}
+.well .pic {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 50%;
+}
+
+.well .pic .img-responsive {
+    margin: 0;
+    padding: 0;
+}
+// .output {
+//     color: #f5efef;
+// }
 
 .cart {
     color: #f5efef;
@@ -88,15 +155,15 @@ body {
 
 .p1[data-count]:after{
     position:absolute;
-    right:3%;
-    top: 3%;
+    right:34%;
+    top: 27%;
     content: attr(data-count);
-    font-size:60%;
+    font-size:45%;
     padding:.3em;
     border-radius:60%;
     line-height:1em;
-    color: #cccccc;
-    background:#1b1a1a;
+    color: #1b1a1a;
+    // background:#1b1a1a;
     text-align:center;
     min-width: 1em;
     font-weight:bold;

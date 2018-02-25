@@ -15,6 +15,9 @@ gem 'better_errors', group: :development
 gem 'binding_of_caller'
 gem 'carrierwave'
 gem 'kaminari'
+gem 'stripe', :git => "https://github.com/stripe/stripe-ruby"
+gem 'figaro'
+# gem 'certified'  for windows
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.5'
