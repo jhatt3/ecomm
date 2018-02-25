@@ -11,32 +11,34 @@
     </div>
   <% end %>
 
-  <div class="from-group edit">
-    <%= form.label :name %>
+
+  <div class="form-group edit">
+    <%= form.label :name %><br>
     <%= form.text_field :name, id: :product_name %>
   </div>
 
-  <div class="from-group edit">
-    <%= form.label :price %>
+  <div class="form-group edit">
+    <%= form.label :price %><br>
     <%= form.text_field :price, id: :product_price %>
   </div>
 
-  <div class="from-group edit">
-    <%= form.label :quantity %>
+  <div class="form-group edit">
+    <%= form.label :quantity %><br>
     <%= form.number_field :quantity, id: :product_quantity %>
   </div>
 
-  <div class="from-group edit">
-    <%= form.label :decription %>
+  <div class="form-group edit">
+    <%= form.label :decription %><br>
     <%= form.text_area :decription, id: :product_decription %>
   </div>
 
-  <div class="from-group edit">
-    <%= form.label :brand %>
+  <div class="form-group edit">
+    <%= form.label :brand %><br>
     <%= form.text_field :brand, id: :product_brand %>
   </div>
 
-  <div class="from-group edit">
+  <div class="form-group edit">
+  <strong>Category</strong><br>
     <%= form.select :category_id, @categories.collect { |c| [c.name, c.id]}, {include_blank: 'Please select a category: ' } %>
   </div> <!-- select creates drop down list collect works like map -->
 
@@ -44,8 +46,9 @@
     <strong>Upload Product Image</strong>
     <%=form.file_field :image %>
   </div>
-
-  <div class="from-group edit">
+  <br><br>
+  <div class="form-group edit">
     <%= form.submit %>
   </div>
+
 <% end %>

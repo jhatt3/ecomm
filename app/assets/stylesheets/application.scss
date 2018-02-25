@@ -73,6 +73,17 @@ body {
     color: #f5efef;
 }
 
+.form-group {
+    color: #353533;
+    text-align: justify;
+}
+
+
+
+.update {
+    float: right;
+}
+
 .edit {
     color: #1b1a1a;
     border: none;
@@ -117,6 +128,10 @@ body {
     color: #f5efef;
     text-align: right;
 
+}
+
+.modal-footer #quantity {
+    color: #353533;
 }
 
 .modal-footer span {
